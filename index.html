@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mammals</title>
+    <link rel="icon" href="./images/giraffe.png" />
+    <!-- Include Google fonts: Frijole, Carter One, Open Sans, Oswald -->
+    <link href="https://fonts.googleapis.com/css?family=Frijole|Carter+One&family=Rubik+Glitch+Pop|Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <!-- Normalize browser styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="app.css" rel="stylesheet">
+    <!-- Link to app.js with defer till HTML render -->
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Mammals</h1>
+        <h3>How do you compare?</h3>
+    </header>
+    <!-- Form to get user input -->
+    <form id="mammal-compare">
+        <div class="form-container">
+            <p>Name:</p>
+            <input id="name" class="form-field__full" type="text" placeholder="write your name here" name="name">
+            <p>Height:</p>
+            <label>M: <input id="meter" class="form-field__short" type="number" name="meter"></label>
+            <label>Cm: <input id="centimeter" class="form-field__short" type="number" name="centimeter"></label>
+            <div id="min-alert-height" class="min-alert-right">&nbsp&nbsp&nbsp Minimum height 1 cm</div>
+            <p>Weight:</p>
+            <label id="min-alert-weight" class="min-alert-right"><input id="weight" class="form-field__full" type="number" min="1" placeholder="min 1" name="weight">Kg</label>
+            <p>Diet:</p>
+            <select id="diet" class="form-field__full" name="diet">
+                <option>Herbavore</option>
+                <option>Omnivore</option>
+                <option>Carnivore</option>
+            </select>
+            <div id="btn">Compare Me!</div>
+        </div>
+    </form>
+    <!-- .grid to attach tiles to -->
+    <main id="grid">
+        <!-- Check code for tileMammalGenerator -->
+        <!-- <div class="grid-item"> 
+            <h3>Elephant</h3>
+            <img src="images/elephant.png" alt="Elephant">
+            <p>Elephants have the largest brains of any land animal. They are highly intelligent</p>
+        </div>-->
+    </main>
+    <footer>
+        <!-- Include information source -->
+        <p class="fine-print">All numbers are approximations.</p>
+    </footer>
+</body>
+</html>
