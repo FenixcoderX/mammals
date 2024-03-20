@@ -91,6 +91,7 @@ p {
 .grid-item img {
   max-width: 100%;
   padding-bottom: 1em;
+  width:100%;
 }
 .img-human {
   cursor: pointer;
