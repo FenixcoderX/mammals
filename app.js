@@ -1,17 +1,3 @@
-/**
- * @description Get mammal data from mammals.json file and write it to mammalDataFromJSON
- */
-/*
-    //This works only when files located in server
-
-let mammalDataFromJSON;
-
-(async function getMammalDataFromJSON () {
-    fetch('./mammal.json', {mode:'no-cors'})
-    .then(response => response.json())
-    .then(mammals => {mammalDataFromJSON = mammal.Mammals});})();
-*/
-
 //Base mammals data
 
 /**
@@ -205,12 +191,6 @@ class MammalConstructor {
   }
 }
 
-/******** check MammalConstructor */
-/* in console:
-        const ddd = new MammalConstructor(mammalData()[1]);
-        const mammal1 = new MammalConstructor (mammalData ()[0]);
-        */
-
 // Create Mammal Objects
 
 /**
@@ -232,10 +212,6 @@ function newMammalData(baseMammalData) {
   return newMammals;
 }
 
-/******** Check newMammalData */
-/* in console:
-        let aaa = newMammalData (mammalData ());
-        */
 
 // Create Human Object
 /**
@@ -252,11 +228,6 @@ function newHumanData() {
     diet: document.querySelector('#diet').value,
   };
 }
-
-/******** Check newMammalData */
-/* in console:
-        newHumanData ();
-        */
 
 // Generate Tiles for each Mammal in Array
 /**
@@ -299,18 +270,6 @@ function tileMammalGenerator(mammalObject, humanObject) {
   return mammalTileHtml;
 }
 
-/******** Check tileMammalGenerator */
-/* in console:
-            const mammal1 = new MammalConstructor(mammalData()[0]);
-            let human1 = {
-                "name": "fenix",
-                "weight": 60,
-                "height": "170",
-                "diet": "omnivore",
-            };  
-        tileMammalGenerator (mammal1,human1); 
-        */
-
 // Add tiles to DOM
 // Remove form from screen
 /**
@@ -333,17 +292,6 @@ function tilesToDom(mammalArray, humanObject) {
   }
   document.querySelector('#grid').innerHTML = tilesHTML;
 }
-
-/******** Check tilesToDom */
-/* in console:
-        let human1 = {
-            "name": "fenix",
-            "weight": 60,
-            "height": "170",
-            "diet": "omnivore",
-        };  
-        tilesToDom (newMammalData (mammalData ()),human1); 
-        */
 
 // On button click, prepare and display infographic
 /**
